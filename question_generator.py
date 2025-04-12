@@ -4,8 +4,6 @@
 # 2. High reasoning ability: For generating in-depth and insightful questions.
 # 3. Scalability: Can be deployed on local/high‑performance setups.
 
-
-
 import json 
 from chunking import chunk_text
 import random
@@ -27,11 +25,6 @@ def call_ollama_llm(prompt: str) -> str:
     llm = OllamaLLM(model="llama3.1", temperature=0.3)
     response = llm.invoke(prompt)
     print(f"LLM Response: {response}")
-    # Ensure the response is in JSON format
-    try:
-        json.loads(response)  # Validate JSON format
-    except json.JSONDecodeError:
-        raise ValueError("LLM response is not in valid JSON format.")
     return response
 
 def generate_questions_from_chunk(chunk: str) -> list:
