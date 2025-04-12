@@ -16,7 +16,7 @@ This project uses **LLaMA 3.1** and a **Retrieval-Augmented Generation (RAG)** a
 
 ## 🧰 Technologies Used
 
-- **LLaMA 3.1**
+- **LLaMA 3.1** using the model through Ollama 
 - **FastAPI** for API Creation 
 
 ---
@@ -39,22 +39,27 @@ This project uses **LLaMA 3.1** and a **Retrieval-Augmented Generation (RAG)** a
 
 ## 🧑‍💻 Usage
 
+### Installing Ollama
+
+You can download the Ollama for Windows,macOS & Linux from https://ollama.com/download
+
+### cloning github repository
 ```
 git clone https://github.com/divyansh89532/Question_Generation.git
 ```
 
-# Create a virtual Environment 
+### Create a virtual Environment 
 ```
 python -m venv .
 ```
 
-# Installing the dependencies
+### Installing the dependencies
 
 ```
 pip install -r requirements.txt
 ```
 
-# Running the code 
+### Running the code 
 ```
 uvicorn app:app --reload
 ```
