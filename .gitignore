@@ -1,0 +1,51 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+.envrc
+*.env
+
+# VSCode and IDE settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Python cache and logs
+*.log
+*.tmp
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Output and data
+output/
+documents/*.pdf
+*.json
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# PyInstaller
+*.spec
+dist/
+build/
+
+# MyPy and Pyre type checker
+.mypy_cache/
+.pyre/
+
+# LlamaIndex cache
+index_store/
+storage/
+Include/
+Lib/
+Scripts/
+
+*.cfg
